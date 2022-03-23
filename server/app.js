@@ -19,10 +19,11 @@ mongoose.connection.on ('error',(err)=>{
 
 require('./models/passenger')
 require('./models/admin')
+require('./models/flight')
 app.use( express.json())
 app.use(require('./routes/authP'))
 app.use(require('./routes/authAdmin'))
-
+app.use(require('./routes/Admin'))
 app.listen(PORT,()=>{
     console.log("serveur is running on port ",PORT)
 })

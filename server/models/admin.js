@@ -28,7 +28,8 @@ const AdminSchema = new mongoose.Schema({
     matricule: {
         type: String,
         required: true
-    }
+    },
+    
     
 
 })
