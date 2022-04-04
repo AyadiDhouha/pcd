@@ -1,60 +1,55 @@
 const mongoose =require('mongoose')
 const {ObjectId} = mongoose.Schema.Types
-const FlightSchema = new mongoose.Schema ({
-    Destination:{
+const BookingSchema = new mongoose.Schema ({
+    name:{
         type:String,
         required:true
     },
-    Date:{
+    lastName:{
         type:String,
         required:true
     },
-    DepatureTime:{
+    email:{
         type:String,
         required:true
     },
-    ArrivalTime:{
+    nbrPlace:{
         type:String,
         required:true
     },
-    DepatureAirport:{
+    Class:{
         type:String,
         required:true
     },
-    ArrivalAirport:{
+    RIB:{
         type:String,
         required:true
     },
-    Airline:{
+    phone:{
         type:String,
         required:true
     },
-    PlaneModel:{
+    numPasseport:{
         type:String,
         required:true
     },
-    PlaneManufacturer:{
-        type:String,
-        required:true
-    },
-    Capacity:{
+    Bagage:{
         type:String,
         required:true
     },
 
-    Price:{
+    cin:{
         type:String,
         required:true
     },
-    postedBy:{
-        type:ObjectId,
-        ref:"Admin"
-     },
-     bookedBy:{
+    bookedBy:{
         type:ObjectId,
         ref:"Passenger"
+     },
+    book:{
+        type:ObjectId,
+        ref:"Flight"
      }
-    
    
 })
-    mongoose.model("Flight",FlightSchema)
+    mongoose.model("Booking",BookingSchema)
