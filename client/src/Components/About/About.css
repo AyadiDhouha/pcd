@@ -1,0 +1,96 @@
+.about-section {
+    margin-top: 300px;
+    display: block
+    ;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+.about {
+    width: 270px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+    padding: 10px;
+    text-align: center;
+    margin: 12px 13px 40px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.about {
+    width: 210px;
+    display: flex;
+    align-items: center;
+}
+
+.about .about-icon {
+    margin-top: -40px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #4361ee;
+    color: #fff;
+    font-size: 35px;
+}
+i{
+    margin-top: 20px;
+    margin-left: 1px;
+}
+.text-center {
+    text-align: center!important;
+}
+
+.about-header h3 {
+    font-size: 25px;
+    padding-bottom: 7px;
+    font-weight: 700;
+    width: 150px;
+    border-bottom: 4px solid #4361ee;
+    color: #4361ee;
+    margin: 0 auto 20px;
+}
+.about-header h2 {
+    letter-spacing: 5px;
+    font-size: 23px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #000;
+
+}
+
+
+.about h4 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 10px 0;
+}
+.about p {
+    font-size: 15px;
+    padding: 7px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.about .about-btn {
+    margin: 15px;
+    border: none;
+    background-color: #4361ee;
+    padding: 8px 12px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}

@@ -26,8 +26,8 @@ var transporter = nodemailer.createTransport({
 router.post('/signup',(req,res)=>{
     //,nationality,PasseportNumber,Proffesion,phone
     //||!nationality||!PasseportNumber||!Proffesion||!phone
-    const{name,lastName,email,password}=req.body
-    if(!email|| !password||!name||!lastName){
+    const{name,userName,email,password,phone}=req.body
+    if(!email|| !password||!name||!userName||!phone){
          return res.status(422).json({error:"please add  all the fields!"})  
     }
     res.json({message:"saved successfuly"})
@@ -42,7 +42,8 @@ router.post('/signup',(req,res)=>{
                 email,
                 password:hashedpassword,
                 name,
-                lastName,
+                userName,
+                phone,
             })
             user.save()
             .then(user=>{

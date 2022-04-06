@@ -5,7 +5,7 @@ const PassengerSchema = new mongoose.Schema ({
         type:String,
         required:true
     },
-    lastName:{
+    userName:{
         type:String,
         required:true
     },
@@ -15,6 +15,10 @@ const PassengerSchema = new mongoose.Schema ({
         required:true
     },
     password:{
+        type:String,
+        required:true
+    },
+    phone:{
         type:String,
         required:true
     },

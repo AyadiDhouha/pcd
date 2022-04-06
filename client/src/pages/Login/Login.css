@@ -1,0 +1,88 @@
+.login{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+
+}
+.container_login{
+    
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+   
+}
+.container_login .title{
+    font-size: 25px;
+    font-weight: 500;
+    position:relative;
+    margin-left: 140px;
+}
+.container_login .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+}
+
+.container form .user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+
+}
+form .user-info .input-box{
+    margin-bottom: 15px;
+}
+.user-info .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-info .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-info .input-box input:focus,
+.user-info .input-box input:valid{
+    border-color:#9b59b6 ;
+}
+form .button_login{
+    height: 60px;
+    margin: 45px 0;
+    margin-left: 5px;
+    
+}
+form .button_login input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+
+}
+.container_login h5{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
